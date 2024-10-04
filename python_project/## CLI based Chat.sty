@@ -1,0 +1,78 @@
+## CLI based Chat
+
+Sender and receiver
+
+Network
+
+sender and receiver should be connected to same network (ex- wifi)
+physical layer (cables) or
+wifi
+
+prtocol - UDP (User Datagram Protocol)
+
+unique ip adderess
+
+library - socket
+
+create socket
+S = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)   #in socket module we have a class name socket (socket.socket) and we passed to argumnets (socket.AF_INET, socket.SOCK_DGRAM) 
+
+ipaddress and port no.(uniqly identify the service or application)
+PORT_NO = 2525 #range (0 - 65353) you can use any one and some are already reserved
+
+
+
+sender side code - 
+
+import socket
+S = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+# target_ip = "10.1.0.94"
+target_ip = "10.1.0.47"
+
+PORT_NO = 2525
+target_address = (target_ip, PORT_NO)
+
+
+while True:
+    message = input("please write a message : ")
+    encrypted_message = message.encode('ascii')
+    S.sendto(encrypted_message, target_address)
+    print("you have successfully sent the message!")
+
+
+
+
+receiver side code - 
+
+import socket
+import os
+S = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+ip_address = "10.1.0.135"
+# ip_address = "127.0.0.1"
+
+PORT_NO = 2525 #range (0 - 65353)
+complete_address = (ip_address,PORT_NO) #created a tuple
+
+S.recvfrom(100) # receive only 100 characters at a time or say 100 packets
+S.bind(complete_address)
+
+print("hey data is receiving...")
+while True:
+    data = S.recvfrom(100)
+    print(data)
+
+
+
+
+
+//assignment
+
+1.files should be saved in data folder instead of outside folder
+2.msg ke sath time and date bhi show ho
+
+using datetime module
+
+syntax should be:
+time and date : message

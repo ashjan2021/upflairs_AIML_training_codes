@@ -1,0 +1,19 @@
+Neural network :-
+
+    ANN - Artificial neural network  (based on biological neural network)
+
+    CNN - Conventional neural network
+
+    RNN - Recurrent neural network
+
+
+
+ANN - 
+    capable to deal with complex data where machine learning 
+
+
+    1-input layer
+    n-hidden layer
+    1-output layer
+
+

@@ -1,0 +1,84 @@
+MACHINE LEARNING - 1.SUPERVISED 2.UNSUPERVISED 3.REINFORCEMENT
+
+1.SUPERVISED LEARNING -when we have to predict the dependent column on the basis of independent column (like marks is a dependent column from (name, class, gender, marks))
+types of supervised - 1.regression(y ka nature continous) 2.classification(y ka nature discrete)
+
+
+
+2.UNSUPERVISED LEARNING - 
+
+unlabelled data (raw data) - algo(machine) - classes or groups
+
+1.Clustering Analysis (Grouping)
+
+algo - KMeans
+
+
+
+3.REINFORCEMENT LEARNING - during the prediction or processing it correct itself. it check that what it is doing is coreect or not and correect it by going backwards.
+
+
+Real lofe applications of ML
+1.sales prediction
+2.spam and ham classification
+
+
+
+
+
+
+
+SUPERVISED LEARNING - 
+REGRESSION (if y variable has a continous nature)- 
+            1.linear regression
+            2.decision tree
+            3.random forest regression
+            4.KNN
+            5.SVM
+
+CLASSIFICATION (if y variable has a discrete nature) - 
+            1.logistic Regression
+            2.decision tree
+            3.random forest classification
+            4.KMM
+            5.SVM
+            6.Naive Bayes
+
+
+
+Note : data preparation :- 
+                gathering data
+                analysi data (EDA- exploratory data Analysis) and data cleaning
+                remove duplicate data
+                remove missing data records (rows or columns) or filling the records.
+                pre-processing
+                Data transformation - convert categorical to numerical
+                            # categorical => Numerical
+                            # 1.label encoding  - lables(numeric value)
+                            # 2.onehot encoding - (categorical into numeric value but using 0 and 1 only)
+                            # 3.ordinal encoding - ()
+                            # assign values 1,2,3,4 to the values which are not in numeric datatype in owner.
+                x,y
+                train algo
+                test algo
+
+                            # trainingg score and testing score me jiska score difference 5 ya 5 se kam ho to vo best he
+                            # 
+                            # over fit 
+                            # (training score high (91), testing score low (81))
+                            # under fit (training score )
+                            # (training score low , testing store unknown (may be high or low))
+
+
+
+
+
+
+Backend
+
+API
+
+two methods:-
+
+get method (no encryption)
+post method (encryption)

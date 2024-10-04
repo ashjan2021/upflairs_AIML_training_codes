@@ -1,0 +1,13 @@
+flask
+
+web framework
+
+url or route
+
+ip_address:port_no
+
+eg - 192:168:23:23:2222
+
+domain
+
+ip_address:port/project
