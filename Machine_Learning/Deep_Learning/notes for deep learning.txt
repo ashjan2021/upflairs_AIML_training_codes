@@ -9,7 +9,7 @@ Neural network :-
 
 
 ANN - 
-    capable to deal with complex data where machine learning 
+    capable to deal with complex data where machine learning fails
 
 
     1-input layer
