@@ -1,0 +1,9 @@
+tensorflow
+opencv-python
+numpy
+pillow
+pandas
+matplotlib
+seaborn
+seaborn
+# pip install -r requirements.txt
